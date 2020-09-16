@@ -1,3 +1,13 @@
+# Show Me Something Great
+## A web app for great movie viewing suggestions
+
+This project is a simple website / app which randomly suggests a great movie for the user to watch. The movie data is obtained from a free online movie database called The Movie Database (https://www.themoviedb.org/), or TMDB for short.
+
+The minimum viable product for this app is a single page that randomly generates a card displaying the details of a great movie. The user will have the option "roll again" if it is a movie they have already seen, or it doesn't take their fancy.
+
+
+
+# Technology used
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
