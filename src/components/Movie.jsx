@@ -63,7 +63,9 @@ const Movie = () => {
                 <h3>{movie['title']}</h3> <h4>({movie['release_date']})</h4>
                 <h4>{movie['vote_average']}</h4>
                 <p>{movie['overview']}</p>
-                <button onClick={() => searchAgain(randomiseNumber())} >Seen it! Show Me Another</button>
+                <h3>Already seen it?</h3>
+                <h4>Click the button to be served another great.</h4>
+                <button onClick={() => searchAgain(randomiseNumber())} >Show Me Another</button>
             </main>
         );
     } else if (fetchingData === false && error !== 0) {
