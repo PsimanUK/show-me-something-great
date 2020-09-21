@@ -59,7 +59,7 @@ const Movie = () => {
         console.log('rendering');
         return (
             <main>
-                <img src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${movie['poster_path']}`} alt="Placeholder" />
+                <img className="moviePoster" src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${movie['poster_path']}`} alt="Placeholder" />
                 <h3>{movie['title']} ({movie['release_date'].slice(0, 4)})</h3>
                 <h4>{movie['vote_average']} / 10</h4>
                 <p class="overview" >{movie['overview']}</p>
