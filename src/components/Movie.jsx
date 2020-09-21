@@ -67,6 +67,9 @@ const Movie = () => {
                         <h3>{movie['title']} ({movie['release_date'].slice(0, 4)})</h3>
                         <h4>{movie['vote_average']} / 10</h4>
                         <p class="overview" >{movie['overview']}</p>
+                        <h4>Want to learn more?</h4>
+                        <button><a href={`https://www.imdb.com/title/${movie['imdb_id']}/`}>GO TO IMDB.COM</a></button>
+
                     </section>
                 </section>
                 <h3>Already seen it?</h3>
