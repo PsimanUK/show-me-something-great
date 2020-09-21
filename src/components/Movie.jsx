@@ -60,9 +60,9 @@ const Movie = () => {
         return (
             <main>
                 <img src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${movie['poster_path']}`} alt="Placeholder" />
-                <h3>{movie['title']}</h3> <h4>({movie['release_date']})</h4>
-                <h4>{movie['vote_average']}</h4>
-                <p>{movie['overview']}</p>
+                <h3>{movie['title']} ({movie['release_date'].slice(0, 4)})</h3>
+                <h4>{movie['vote_average']} / 10</h4>
+                <p class="overview" >{movie['overview']}</p>
                 <h3>Already seen it?</h3>
                 <h4>Click the button to be served another great.</h4>
                 <button onClick={() => searchAgain(randomiseNumber())} >Show Me Another</button>
