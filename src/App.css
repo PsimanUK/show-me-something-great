@@ -1,6 +1,11 @@
+body, html {
+  height: 100%;
+  background-color: #19253b;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
-  background-color: #19253b;
   color: aliceblue;
 }
 
@@ -13,7 +18,32 @@ header {
   color: white;
 }
 
+.movieCard {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  max-width: 80%;
+  margin: auto;
+  background: rgb(129, 134, 176);
+  border: 2px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 5px 10px 40px goldenrod;
+}
+
+.movieCardLeft {
+  /* display: flex;
+  flex-grow: 10; */
+  /* flex-direction: column; */
+  padding: 10px;
+}
+
+.movieCardRight {
+  padding: 10px;
+}
+
 .moviePoster {
-  max-width: 30%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
